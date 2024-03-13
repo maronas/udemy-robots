@@ -1,11 +1,11 @@
 import React from 'react';
 import './Robots.css'
-import RandomRobots from "../../ListMaker/RandomRobots";
+import RobotsList from "../../ListMaker/RobotsList";
 
 const Robots = ({robots}) => {
     return (
         <div>
-            <RandomRobots robotsStore={robots}/>
+            <RobotsList robots={robots}/>
         </div>
     );
 };
