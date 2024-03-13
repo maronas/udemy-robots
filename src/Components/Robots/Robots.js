@@ -2,10 +2,10 @@ import React from 'react';
 import './Robots.css'
 import RandomRobots from "../../ListMaker/RandomRobots";
 
-const Robots = () => {
+const Robots = ({robots}) => {
     return (
         <div>
-            <RandomRobots count={11}/>
+            <RandomRobots robotsStore={robots}/>
         </div>
     );
 };
