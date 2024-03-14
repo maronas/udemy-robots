@@ -23,7 +23,7 @@ const RobotsRandomizer = ({count}) => {
         })
     }
     return (
-        console.log(robots)
+        robots
     );
 };
 

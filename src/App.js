@@ -30,8 +30,7 @@ class App extends Component {
             <div>
                 <button
                 onClick={() => {
-                    this.onRandomized(robotsRandomizer(10))
-                    console.log(robotsRandomizer(10))
+                    this.state.robots = this.setState({robots: robotsRandomizer({count: 10})});
                 }}
                 >CLICK</button>
                 <Logo/>
