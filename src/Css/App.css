@@ -1,4 +1,84 @@
-.navigation__{
+.menubar__{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menubar__ > div{
+    margin: 0 auto;
+}
+
+.menubar__ > button{
+    position: absolute;
+    left: 92%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: flex-end;
+}
+
+button {
+    width: 60px;
+    height: 60px;
+    border: 2px solid #007bff;
+    border-radius: 50%;
+    background-color: transparent;
+    color: #007bff;
+    font-size: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    position: relative;
+}
+
+button:before,
+button:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid #007bff;
+}
+
+button:before {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border-top: none;
+    border-right: none;
+}
+
+button:after {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border-bottom: none;
+    border-left: none;
+}
+
+button:before,
+button:after,
+button.crack1,
+button.crack2 {
+    border-color: #ddd; /* Color for cracks */
+}
+
+button.crack1 {
+    position: absolute;
+    top: 15px;
+    left: 50%;
+    width: 10px;
+    height: 2px;
+    background-color: #ddd;
+    transform-origin: center;
+    transform: rotate(45deg);
+}
+
+button.crack2 {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    width: 10px;
+    height: 2px;
+    background-color: #ddd;
+    transform-origin: center;
 }

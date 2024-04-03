@@ -1,0 +1,12 @@
+.scroll{
+    text-align: center;
+    overflow: scroll;
+    border: 1px solid black;
+    width: 99vw;
+    height: 85vh;
+    display: flex;
+}
+
+.scroll *{
+    justify-content: center;
+}
